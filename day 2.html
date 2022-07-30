@@ -1,0 +1,14 @@
+<input type="text" value="0" id="radius" />
+<input type="text" value="0" id="ans" readonly />
+<button onclick="getarea()">
+    get Area
+</button>
+
+<script>
+   function getarea(){
+        let radius = parseInt(document.getElementById('radius').value);
+        let ans = document.getElementById('ans');
+
+        ans.value = 2*3.14*radius;
+    }
+</script>

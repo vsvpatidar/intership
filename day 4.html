@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" value="0" placeholder="enter the value of A" id="inA" />
+    <input type="text" value="0" placeholder="enter the value of B" id="inB" />
+    <input type="text" value="0" onclick="" id="inAns" readonly/>
+    
+    <button onclick="addition()" id="addition"> + </button>
+    <button onclick="subtraction()" id="subtraction"> - </button>
+    <button onclick="multiplication()" id="multiplication"> x </button>
+    <script>
+
+        
+        function addition() {
+             let a = parseInt(document.getElementById('inA').value);
+             let b = parseInt(document.getElementById('inB').value);
+            let c = a+b;
+            document.getElementById('inAns').value = c;
+        
+        } 
+        
+        function subtraction() {
+           let a = parseInt(document.getElementById('inA').value);
+            let b = parseInt(document.getElementById('inB').value);
+            let c = a-b;
+            document.getElementById('inAns').value = c;
+        
+        } 
+
+        function multiplication() {
+           let a = parseInt(document.getElementById('inA').value);
+            let b = parseInt(document.getElementById('inB').value);
+            let c = a*b;
+            document.getElementById('inAns').value = c;
+        
+        } 
+           
+    </script>
+</body>
+</html>
